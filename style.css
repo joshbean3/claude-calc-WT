@@ -20,6 +20,8 @@ body {
     padding: 10px;
     border: 1px solid #000000;
     background-color: #778899;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255,0,0,0.5);
 }
 
 #calcDisplay {
@@ -64,4 +66,18 @@ button {
     flex: 1;
     height: 5vh;
     margin: .25vh;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
